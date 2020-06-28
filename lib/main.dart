@@ -6,7 +6,7 @@ import 'package:passtime/Snake.dart';
 import 'package:passtime/Tetris.dart';
 import 'package:passtime/Tic.dart';
 import 'package:passtime/sudoku.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'Home.dart';
 
 void main() {
@@ -44,11 +44,11 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Center(
               child: Text(
             widget.title,
-            style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.bold,
-                fontSize: 32,
-                fontFamily: 'BlackOpsOne'),
+            style: GoogleFonts.blackOpsOne(
+                textStyle: TextStyle(
+              color: Colors.grey,
+              fontSize: 32,
+            )),
           )),
           actions: [
             FlatButton(
@@ -90,10 +90,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             padding: EdgeInsets.all(1),
                             child: Text(
                               "Home",
-                              style: TextStyle(
+                              style: GoogleFonts.abel(
+                                  textStyle: TextStyle(
                                 color: Colors.white,
-                                fontFamily: 'BlackOpsOne',
-                              ),
+                                fontSize: 18,
+                              )),
                             ),
                             color: Color(0xffdb3c07),
                             elevation: 10.0,
@@ -110,10 +111,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.all(1),
                               child: Text(
                                 "Snake",
-                                style: TextStyle(
+                                style: GoogleFonts.abel(
+                                    textStyle: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: 'BlackOpsOne',
-                                ),
+                                  fontSize: 18,
+                                )),
                               ),
                               color: Colors.redAccent,
                               elevation: 10.0,
@@ -130,10 +132,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.all(1),
                               child: Text(
                                 "Tic Tac Toe",
-                                style: TextStyle(
+                                style: GoogleFonts.abel(
+                                    textStyle: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: 'BlackOpsOne',
-                                ),
+                                  fontSize: 18,
+                                )),
                               ),
                               color: Colors.redAccent,
                               elevation: 10.0,
@@ -150,10 +153,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.all(1),
                               child: Text(
                                 "2048",
-                                style: TextStyle(
+                                style: GoogleFonts.abel(
+                                    textStyle: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: 'BlackOpsOne',
-                                ),
+                                  fontSize: 18,
+                                )),
                               ),
                               color: Colors.redAccent,
                               elevation: 10.0,
@@ -170,10 +174,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.all(1),
                               child: Text(
                                 "Sudoku",
-                                style: TextStyle(
+                                style: GoogleFonts.abel(
+                                    textStyle: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: 'BlackOpsOne',
-                                ),
+                                  fontSize: 18,
+                                )),
                               ),
                               color: Colors.redAccent,
                               elevation: 10.0,
@@ -190,10 +195,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.all(1),
                               child: Text(
                                 "Tetris",
-                                style: TextStyle(
+                                style: GoogleFonts.abel(
+                                    textStyle: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: 'BlackOpsOne',
-                                ),
+                                  fontSize: 18,
+                                )),
                               ),
                               color: Colors.redAccent,
                               elevation: 10.0,

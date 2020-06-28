@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'main.dart';
 
@@ -70,11 +71,11 @@ class _Tic extends State<Tic> {
               padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
               color: Colors.blue[700],
               child: Text("RESTART",
-                  style: TextStyle(
-                      fontSize: 22,
-                      fontFamily: 'BlackOpsOne',
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold)),
+                  style: GoogleFonts.blackOpsOne(
+                      textStyle: TextStyle(
+                          fontSize: 22,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold))),
               onPressed: () {
                 playAgain();
                 x++;
@@ -90,11 +91,11 @@ class _Tic extends State<Tic> {
                 padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
                 color: Colors.blue[700],
                 child: Text("HOME",
-                    style: TextStyle(
-                        fontSize: 22,
-                        fontFamily: 'BlackOpsOne',
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold)),
+                    style: GoogleFonts.blackOpsOne(
+                        textStyle: TextStyle(
+                            fontSize: 22,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold))),
                 onPressed: () => Navigator.push(
                     context, MaterialPageRoute(builder: (context) => MyApp()))),
           ]),
@@ -240,22 +241,22 @@ class _Tic extends State<Tic> {
         return AlertDialog(
             content: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
           Text("The winner is",
-              style: TextStyle(
-                  fontSize: 32,
-                  fontFamily: 'hs_us',
-                  color: Color(0xff3B7080),
-                  fontWeight: FontWeight.bold)),
+              style: GoogleFonts.abel(
+                  textStyle: TextStyle(
+                      fontSize: 32,
+                      color: Color(0xff3B7080),
+                      fontWeight: FontWeight.bold))),
           Icon(getIconFromStatus(currentTurn),
               size: 60, color: Color(0xff3B7080)),
           RaisedButton(
             padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
             color: Color(0xffe04251),
             child: Text("Play again",
-                style: TextStyle(
-                    fontSize: 22,
-                    fontFamily: 'hs_us',
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold)),
+                style: GoogleFonts.abel(
+                    textStyle: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold))),
             onPressed: () {
               playAgain();
               x++;
@@ -269,11 +270,11 @@ class _Tic extends State<Tic> {
               padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
               color: Color(0xffe04251),
               child: Text("HOME",
-                  style: TextStyle(
-                      fontSize: 22,
-                      fontFamily: 'hs_us',
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold)),
+                  style: GoogleFonts.abel(
+                      textStyle: TextStyle(
+                          fontSize: 22,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold))),
               onPressed: () => Navigator.push(
                   context, MaterialPageRoute(builder: (context) => MyApp()))),
         ]));
@@ -291,20 +292,20 @@ class _Tic extends State<Tic> {
         return AlertDialog(
             content: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
           Text("Draw",
-              style: TextStyle(
-                  fontSize: 32,
-                  fontFamily: 'hs_us',
-                  color: Color(0xff3B7080),
-                  fontWeight: FontWeight.bold)),
+              style: GoogleFonts.abel(
+                  textStyle: TextStyle(
+                      fontSize: 32,
+                      color: Color(0xff3B7080),
+                      fontWeight: FontWeight.bold))),
           RaisedButton(
             padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
             color: Color(0xffe04251),
             child: Text("Play again",
-                style: TextStyle(
-                    fontSize: 22,
-                    fontFamily: 'hs_us',
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold)),
+                style: GoogleFonts.abel(
+                    textStyle: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold))),
             onPressed: () {
               playAgain();
               x++;
@@ -318,11 +319,11 @@ class _Tic extends State<Tic> {
               padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
               color: Color(0xffe04251),
               child: Text("HOME",
-                  style: TextStyle(
-                      fontSize: 22,
-                      fontFamily: 'hs_us',
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold)),
+                  style: GoogleFonts.abel(
+                      textStyle: TextStyle(
+                          fontSize: 22,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold))),
               onPressed: () => Navigator.push(
                   context, MaterialPageRoute(builder: (context) => MyApp()))),
         ]));

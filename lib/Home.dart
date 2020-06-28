@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:passtime/Tetris.dart';
 import 'package:passtime/sudoku.dart';
 
@@ -46,11 +47,11 @@ class _HomePageState extends State<HomePage> {
         Center(
           child: Text(
             "SNAKE",
-            style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.bold,
-                fontSize: 32,
-                fontFamily: 'BlackOpsOne'),
+            style: GoogleFonts.blackOpsOne(
+                textStyle: TextStyle(
+              color: Colors.grey,
+              fontSize: 32,
+            )),
           ),
         ),
         //2 tic tac toe
@@ -79,12 +80,12 @@ class _HomePageState extends State<HomePage> {
         ),
         Center(
           child: Text(
-            "TIC TAC TOE",
-            style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.bold,
-                fontSize: 32,
-                fontFamily: 'BlackOpsOne'),
+            "TICTACTOE",
+            style: GoogleFonts.blackOpsOne(
+                textStyle: TextStyle(
+              color: Colors.grey,
+              fontSize: 32,
+            )),
           ),
         ),
         //3 sudoku
@@ -114,11 +115,11 @@ class _HomePageState extends State<HomePage> {
         Center(
           child: Text(
             "SUDOKU",
-            style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.bold,
-                fontSize: 32,
-                fontFamily: 'BlackOpsOne'),
+            style: GoogleFonts.blackOpsOne(
+                textStyle: TextStyle(
+              color: Colors.grey,
+              fontSize: 32,
+            )),
           ),
         ),
         //4 2048
@@ -148,11 +149,11 @@ class _HomePageState extends State<HomePage> {
         Center(
           child: Text(
             "2048",
-            style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.bold,
-                fontSize: 32,
-                fontFamily: 'BlackOpsOne'),
+            style: GoogleFonts.blackOpsOne(
+                textStyle: TextStyle(
+              color: Colors.grey,
+              fontSize: 32,
+            )),
           ),
         ),
         //5 tetris
@@ -181,11 +182,11 @@ class _HomePageState extends State<HomePage> {
         Center(
           child: Text(
             "TETRIS",
-            style: TextStyle(
-                color: Colors.grey,
-                fontWeight: FontWeight.bold,
-                fontSize: 32,
-                fontFamily: 'BlackOpsOne'),
+            style: GoogleFonts.blackOpsOne(
+                textStyle: TextStyle(
+              color: Colors.grey,
+              fontSize: 32,
+            )),
           ),
         ),
       ],

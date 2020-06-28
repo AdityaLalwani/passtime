@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:passtime/2048/tile.dart';
 
 import 'logic/game.dart';
@@ -36,10 +37,11 @@ class Board extends StatelessWidget {
       child: Center(
         child: Text(
           'Game over!',
-          style: TextStyle(
-              fontSize: 30.0,
-              fontWeight: FontWeight.bold,
-              color: Color(MyColor.gridBackground)),
+          style: GoogleFonts.abel(
+              textStyle: TextStyle(
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                  color: Color(MyColor.gridBackground))),
         ),
       ),
     );
@@ -52,10 +54,11 @@ class Board extends StatelessWidget {
       child: Center(
         child: Text(
           'You Won!',
-          style: TextStyle(
-            fontSize: 30.0,
-            fontWeight: FontWeight.bold,
-            color: Color(MyColor.gridBackground),
+          style: GoogleFonts.abel(
+            textStyle: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+                color: Color(MyColor.gridBackground)),
           ),
         ),
       ),

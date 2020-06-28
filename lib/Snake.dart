@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:passtime/main.dart';
 
 class Snake extends StatefulWidget {
@@ -111,11 +112,11 @@ class _Snake extends State<Snake> {
                   ),
                   Text(
                     "Score : $score",
-                    style: TextStyle(
-                        fontSize: 28,
-                        fontFamily: 'hs_us',
-                        color: Colors.blue[700],
-                        fontWeight: FontWeight.bold),
+                    style: GoogleFonts.heptaSlab(
+                        textStyle: TextStyle(
+                            fontSize: 28,
+                            color: Colors.blue[700],
+                            fontWeight: FontWeight.bold)),
                   ),
                   buildMapContainer(),
                   SizedBox(
@@ -591,11 +592,11 @@ class _Snake extends State<Snake> {
                   padding: EdgeInsets.symmetric(horizontal: 18, vertical: 6),
                   color: Color(0xffe04251),
                   child: Text("HOME",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontFamily: 'hs_us',
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold)),
+                      style: GoogleFonts.heptaSlab(
+                          textStyle: TextStyle(
+                              fontSize: 22,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold))),
                   onPressed: () => Navigator.push(context,
                       MaterialPageRoute(builder: (context) => MyApp()))),
             ]));
