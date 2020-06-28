@@ -1,6 +1,6 @@
 # passtime
 
-A new Flutter application.
+A new Flutter application to Play Games and Pass your time.
 
 ## Getting Started
 
