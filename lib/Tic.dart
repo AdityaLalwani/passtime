@@ -72,6 +72,7 @@ class _Tic extends State<Tic> {
               child: Text("RESTART",
                   style: TextStyle(
                       fontSize: 22,
+                      fontFamily: 'BlackOpsOne',
                       color: Colors.white,
                       fontWeight: FontWeight.bold)),
               onPressed: () {
@@ -91,6 +92,7 @@ class _Tic extends State<Tic> {
                 child: Text("HOME",
                     style: TextStyle(
                         fontSize: 22,
+                        fontFamily: 'BlackOpsOne',
                         color: Colors.white,
                         fontWeight: FontWeight.bold)),
                 onPressed: () => Navigator.push(
@@ -240,6 +242,7 @@ class _Tic extends State<Tic> {
           Text("The winner is",
               style: TextStyle(
                   fontSize: 32,
+                  fontFamily: 'hs_us',
                   color: Color(0xff3B7080),
                   fontWeight: FontWeight.bold)),
           Icon(getIconFromStatus(currentTurn),
@@ -250,6 +253,7 @@ class _Tic extends State<Tic> {
             child: Text("Play again",
                 style: TextStyle(
                     fontSize: 22,
+                    fontFamily: 'hs_us',
                     color: Colors.white,
                     fontWeight: FontWeight.bold)),
             onPressed: () {
@@ -267,6 +271,7 @@ class _Tic extends State<Tic> {
               child: Text("HOME",
                   style: TextStyle(
                       fontSize: 22,
+                      fontFamily: 'hs_us',
                       color: Colors.white,
                       fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
@@ -279,6 +284,7 @@ class _Tic extends State<Tic> {
   void showEndGameByDrawDialog() {
     // flutter defined function
     showDialog(
+      barrierColor: Color(0xffebe9d8),
       context: context,
       builder: (BuildContext context) {
         // return object of type Dialog
@@ -287,6 +293,7 @@ class _Tic extends State<Tic> {
           Text("Draw",
               style: TextStyle(
                   fontSize: 32,
+                  fontFamily: 'hs_us',
                   color: Color(0xff3B7080),
                   fontWeight: FontWeight.bold)),
           RaisedButton(
@@ -295,6 +302,7 @@ class _Tic extends State<Tic> {
             child: Text("Play again",
                 style: TextStyle(
                     fontSize: 22,
+                    fontFamily: 'hs_us',
                     color: Colors.white,
                     fontWeight: FontWeight.bold)),
             onPressed: () {
@@ -312,6 +320,7 @@ class _Tic extends State<Tic> {
               child: Text("HOME",
                   style: TextStyle(
                       fontSize: 22,
+                      fontFamily: 'hs_us',
                       color: Colors.white,
                       fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(

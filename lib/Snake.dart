@@ -113,6 +113,7 @@ class _Snake extends State<Snake> {
                     "Score : $score",
                     style: TextStyle(
                         fontSize: 28,
+                        fontFamily: 'hs_us',
                         color: Colors.blue[700],
                         fontWeight: FontWeight.bold),
                   ),
@@ -130,6 +131,7 @@ class _Snake extends State<Snake> {
                     child: Text("RESTART",
                         style: TextStyle(
                             fontSize: 22,
+                            fontFamily: 'BlackOpsOne',
                             color: Colors.white,
                             fontWeight: FontWeight.bold)),
                     onPressed: () {
@@ -146,6 +148,7 @@ class _Snake extends State<Snake> {
                       child: Text("HOME",
                           style: TextStyle(
                               fontSize: 22,
+                              fontFamily: 'BlackOpsOne',
                               color: Colors.white,
                               fontWeight: FontWeight.bold)),
                       onPressed: () => Navigator.push(context,
@@ -558,11 +561,13 @@ class _Snake extends State<Snake> {
               Text("Score : $score ",
                   style: TextStyle(
                       fontSize: 32,
+                      fontFamily: 'hs_us',
                       color: Color(0xff3B7080),
                       fontWeight: FontWeight.bold)),
               Text("Better Luck Next Time",
                   style: TextStyle(
                       fontSize: 24,
+                      fontFamily: 'hs_us',
                       color: Color(0xff3B7080),
                       fontWeight: FontWeight.bold)),
               RaisedButton(
@@ -571,6 +576,7 @@ class _Snake extends State<Snake> {
                 child: Text("Beat your Score",
                     style: TextStyle(
                         fontSize: 22,
+                        fontFamily: 'hs_us',
                         color: Colors.white,
                         fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -587,6 +593,7 @@ class _Snake extends State<Snake> {
                   child: Text("HOME",
                       style: TextStyle(
                           fontSize: 22,
+                          fontFamily: 'hs_us',
                           color: Colors.white,
                           fontWeight: FontWeight.bold)),
                   onPressed: () => Navigator.push(context,

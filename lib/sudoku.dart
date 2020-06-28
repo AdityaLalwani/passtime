@@ -257,6 +257,7 @@ class _Sudoku extends State<Sudoku> {
                 child: Text("RESTART",
                     style: TextStyle(
                         fontSize: 22,
+                        fontFamily: 'BlackOpsOne',
                         color: Colors.white,
                         fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -272,6 +273,7 @@ class _Sudoku extends State<Sudoku> {
                   child: Text("HOME",
                       style: TextStyle(
                           fontSize: 22,
+                          fontFamily: 'BlackOpsOne',
                           color: Colors.white,
                           fontWeight: FontWeight.bold)),
                   onPressed: () => Navigator.push(context,
@@ -292,6 +294,7 @@ class _Sudoku extends State<Sudoku> {
         Text("SUDOKU",
             style: TextStyle(
                 color: Colors.blue[700],
+                fontFamily: 'hs_us',
                 fontSize: 30,
                 fontWeight: FontWeight.bold)),
         SizedBox(
@@ -437,6 +440,7 @@ class _Sudoku extends State<Sudoku> {
               textScaleFactor: fontScale,
               style: TextStyle(
                   color: Colors.white,
+                  fontFamily: 'hs_us',
                   fontSize: 20,
                   fontWeight: FontWeight.w900))),
     );
@@ -463,6 +467,7 @@ class _Sudoku extends State<Sudoku> {
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,
+                  fontFamily: 'hs_us',
                   fontWeight: FontWeight.w900))),
     );
   }
@@ -503,6 +508,7 @@ class _Sudoku extends State<Sudoku> {
                 textScaleFactor: fontScale,
                 style: TextStyle(
                     fontSize: 22,
+                    fontFamily: 'hs_us',
                     color: colorTextNumber,
                     fontWeight: FontWeight.w900))));
   }
@@ -567,182 +573,161 @@ class _Sudoku extends State<Sudoku> {
             child: Container(
               height: MediaQuery.of(context).size.height / 1.20,
               width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  gradient: LinearGradient(
-                      begin: Alignment.topRight,
-                      end: Alignment.bottomLeft,
-                      colors: [
-                        Colors.teal.shade200,
-                        Colors.teal.shade100,
-                        Colors.teal.shade50,
-                        Colors.teal.shade100,
-                        Colors.teal.shade200
-                      ])),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Container(
+                      color: Color(0xff0355e8),
                       padding: EdgeInsets.all(10.0),
                       child: Text(
-                        "Rule 1: Know the Game First",
+                        "Rule 1: Know the Game First:  ",
                         style: TextStyle(
                             fontSize: 20.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xffebe9d8),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "Sudoku is a 9 by 9 puzzles that contain nine 3 by 3 regions. Every region, column, and row also contains nine cells. This game is more like a puzzle game. If you want to play it there is no need for you to make mathematical calculations. In fact, you can just use simple logic in order to get the solution that you want for the game. That is why it is very important that you familiarize yourself with the game. At first, it can be really difficult to play the game. But then eventually, you can play the game really well.",
                           style: TextStyle(
                             fontSize: 18.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xff0355e8),
                       padding: EdgeInsets.all(10.0),
                       child: Text(
-                        "Rule 2: Use digits from 1 – 9",
+                        "Rule 2: Use digits from 1 – 9:  ",
                         style: TextStyle(
                             fontSize: 20.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xffebe9d8),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "The basic essence of the game is for you to fill the 9 by 9 grid with numerical digits. Each row, column and the 3 by 3 grids should contain digits from numbers 1 to 9. This game is quite easy to play especially for those people who have been playing Sudoku for a long period of time.",
                           style: TextStyle(
                             fontSize: 18.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xff0355e8),
                       padding: EdgeInsets.all(10.0),
                       child: Text(
                         "Rule 3: Avoid repetition of figures",
                         style: TextStyle(
                             fontSize: 20.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xffebe9d8),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "Another rule you need to adhere to is to avoid using numbers that already exist in the same region, column or row. In other words, if a number is already occupying a position, ensure it doesn’t appear on the same place within the same column, row or region.Here is an example. If the number 3 already appears in the same position in a region, row or column, then the number 3 can only appear in a different position. That’s how Sudoku works.",
                           style: TextStyle(
                             fontSize: 18.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xff0355e8),
                       padding: EdgeInsets.all(10.0),
                       child: Text(
-                        "Rule 4: Avoid guesswork",
+                        "Rule 4: Avoid guesswork      ",
                         style: TextStyle(
                             fontSize: 20.0,
                             color: Colors.black,
+                            fontFamily: 'hs_us',
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xffebe9d8),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "Well, this is not entirely a rule per se. It is just a piece of advice that will help you tackle this puzzle game with ease. Sudoku is a game that attempts to test the mental capacity of a player. It also encourages and requires patience and maximum concentration from a player. Sudoku is also not a game of math because it involves the use of numbers. All you need is to do is engage in some logical reasoning to identify the missing givens and put them in the right cells.",
                           style: TextStyle(
                             fontSize: 18.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xff0355e8),
                       padding: EdgeInsets.all(10.0),
                       child: Text(
                         "Rule 5: Use the elimination method",
                         style: TextStyle(
                             fontSize: 20.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xffebe9d8),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "This rule is quite simple: eliminate or note down any number that appears in the same row, column or region. In this case, you have to check each square properly (horizontally and vertically) and take note of the numbers that appeared and the position they are occupying. Remember that one of the rules states that there should be no duplication or repetition of numbers. In other words, you cannot have the same number written on the same position on the grid horizontally or vertically when you trace from top to bottom.",
                           style: TextStyle(
                             fontSize: 18.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                           ),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xff0355e8),
                       padding: EdgeInsets.all(10.0),
                       child: Text(
                         "Rule 6: Read Various Sudoku Techniques Online",
                         style: TextStyle(
                             fontSize: 20.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    SizedBox(
-                      height: 6.0,
-                    ),
                     Container(
+                      color: Color(0xffebe9d8),
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "If you want to make things easier, you can find some tips online. Many players would post information regarding the different techniques in playing Sudoku. Using the Internet, you can find information about how to play Sudoku or see the video above. You can just use this set of information and details to know how the game goes. There are different combinations that can come out. But if you know different techniques then you will not have a hard time solving the puzzle.",
                           style: TextStyle(
                             fontSize: 18.0,
+                            fontFamily: 'hs_us',
                             color: Colors.black,
                           ),
                         ),

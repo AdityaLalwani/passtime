@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:passtime/2048/twozero.dart';
 import 'package:passtime/Snake.dart';
 import 'package:passtime/Tetris.dart';
 import 'package:passtime/Tic.dart';
@@ -58,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
         drawer: SizedBox(
-          width: 75.0,
+          width: 105.0,
           child: Drawer(
             child: Row(
               children: [
@@ -83,83 +84,83 @@ class _MyHomePageState extends State<MyHomePage> {
                   destinations: [
                     NavigationRailDestination(
                       icon: SizedBox.shrink(),
-                      label: Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: RotatedBox(
-                          quarterTurns: -1,
-                          child: RaisedButton(
-                              padding: EdgeInsets.all(1),
-                              child: Text(
-                                "Home",
-                                style: TextStyle(color: Colors.white),
+                      label: RotatedBox(
+                        quarterTurns: -1,
+                        child: RaisedButton(
+                            padding: EdgeInsets.all(1),
+                            child: Text(
+                              "Home",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'BlackOpsOne',
                               ),
-                              color: Color(0xffdb3c07),
-                              elevation: 1.0,
-                              onPressed: () {
-                                Navigator.of(context).pop();
-                              }),
-                        ),
+                            ),
+                            color: Color(0xffdb3c07),
+                            elevation: 10.0,
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            }),
                       ),
                     ),
                     NavigationRailDestination(
                         icon: SizedBox.shrink(),
-                        label: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10),
-                          child: RotatedBox(
-                            quarterTurns: -1,
-                            child: RaisedButton(
-                                padding: EdgeInsets.all(1),
-                                child: Text(
-                                  "Snake",
-                                  style: TextStyle(color: Colors.white),
+                        label: RotatedBox(
+                          quarterTurns: -1,
+                          child: RaisedButton(
+                              padding: EdgeInsets.all(1),
+                              child: Text(
+                                "Snake",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'BlackOpsOne',
                                 ),
-                                color: Colors.redAccent,
-                                elevation: 1.0,
-                                onPressed: () => Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Snake()))),
-                          ),
+                              ),
+                              color: Colors.redAccent,
+                              elevation: 10.0,
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Snake()))),
                         )),
                     NavigationRailDestination(
                         icon: SizedBox.shrink(),
-                        label: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10),
-                          child: RotatedBox(
-                            quarterTurns: -1,
-                            child: RaisedButton(
-                                padding: EdgeInsets.all(1),
-                                child: Text(
-                                  "Tic Tac Toe",
-                                  style: TextStyle(color: Colors.white),
+                        label: RotatedBox(
+                          quarterTurns: -1,
+                          child: RaisedButton(
+                              padding: EdgeInsets.all(1),
+                              child: Text(
+                                "Tic Tac Toe",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'BlackOpsOne',
                                 ),
-                                color: Colors.redAccent,
-                                elevation: 1.0,
-                                onPressed: () => Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Tic()))),
-                          ),
+                              ),
+                              color: Colors.redAccent,
+                              elevation: 10.0,
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Tic()))),
                         )),
                     NavigationRailDestination(
                         icon: SizedBox.shrink(),
-                        label: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10),
-                          child: RotatedBox(
-                            quarterTurns: -1,
-                            child: RaisedButton(
-                                padding: EdgeInsets.all(1),
-                                child: Text(
-                                  "Tetris",
-                                  style: TextStyle(color: Colors.white),
+                        label: RotatedBox(
+                          quarterTurns: -1,
+                          child: RaisedButton(
+                              padding: EdgeInsets.all(1),
+                              child: Text(
+                                "2048",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'BlackOpsOne',
                                 ),
-                                color: Colors.redAccent,
-                                elevation: 1.0,
-                                onPressed: () => Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Tetris()))),
-                          ),
+                              ),
+                              color: Colors.redAccent,
+                              elevation: 10.0,
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => TwoZero()))),
                         )),
                     NavigationRailDestination(
                         icon: SizedBox.shrink(),
@@ -169,10 +170,13 @@ class _MyHomePageState extends State<MyHomePage> {
                               padding: EdgeInsets.all(1),
                               child: Text(
                                 "Sudoku",
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'BlackOpsOne',
+                                ),
                               ),
                               color: Colors.redAccent,
-                              elevation: 1.0,
+                              elevation: 10.0,
                               onPressed: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
@@ -182,11 +186,35 @@ class _MyHomePageState extends State<MyHomePage> {
                         icon: SizedBox.shrink(),
                         label: RotatedBox(
                           quarterTurns: -1,
-                          child: FlatButton(
+                          child: RaisedButton(
                               padding: EdgeInsets.all(1),
-                              child: Image.asset("assets/images/close.jpg"),
-                              onPressed: () => exit(0)),
+                              child: Text(
+                                "Tetris",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontFamily: 'BlackOpsOne',
+                                ),
+                              ),
+                              color: Colors.redAccent,
+                              elevation: 10.0,
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Tetris()))),
                         )),
+                    NavigationRailDestination(
+                      icon: FlatButton(
+                          padding: EdgeInsets.all(1),
+                          child: Image.asset("assets/images/close.jpg"),
+                          onPressed: () => exit(0)),
+                      label: RotatedBox(
+                        quarterTurns: -1,
+//                        child: FlatButton(
+//                            padding: EdgeInsets.all(1),
+//                            child: Image.asset("assets/images/close.jpg"),
+//                            onPressed: () => exit(0)),
+                      ),
+                    ),
                   ],
                 )
               ],
